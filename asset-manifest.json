@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/thedataversegrimoire.github.io/static/css/main.efcde11f.css",
+    "main.js": "/thedataversegrimoire.github.io/static/js/main.9e7c8cc1.js",
+    "static/js/453.2384873e.chunk.js": "/thedataversegrimoire.github.io/static/js/453.2384873e.chunk.js",
+    "static/media/Candle.png": "/thedataversegrimoire.github.io/static/media/Candle.330dfec41ee35db18abd.png",
+    "static/media/Grimoire.png": "/thedataversegrimoire.github.io/static/media/Grimoire.92a0168244dd7d7dcab0.png",
+    "static/media/GrimoireOpenedBook.png": "/thedataversegrimoire.github.io/static/media/GrimoireOpenedBook.1dd5ae33206fd7c5ba09.png",
+    "static/media/Title.png": "/thedataversegrimoire.github.io/static/media/Title.fbc5f4056a4fb9cb0cf6.png",
+    "static/media/Background.png": "/thedataversegrimoire.github.io/static/media/Background.758a915a37df6d67eef5.png",
+    "static/media/skeleton-cursor.png": "/thedataversegrimoire.github.io/static/media/skeleton-cursor.b385daf1a6a695d646a7.png",
+    "index.html": "/thedataversegrimoire.github.io/index.html",
+    "main.efcde11f.css.map": "/thedataversegrimoire.github.io/static/css/main.efcde11f.css.map",
+    "main.9e7c8cc1.js.map": "/thedataversegrimoire.github.io/static/js/main.9e7c8cc1.js.map",
+    "453.2384873e.chunk.js.map": "/thedataversegrimoire.github.io/static/js/453.2384873e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efcde11f.css",
+    "static/js/main.9e7c8cc1.js"
+  ]
+}
