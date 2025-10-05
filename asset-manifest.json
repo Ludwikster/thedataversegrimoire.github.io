@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/thedataversegrimoire.github.io/static/css/main.fecaabc4.css",
+    "main.css": "/thedataversegrimoire.github.io/static/css/main.de1f0b1f.css",
     "main.js": "/thedataversegrimoire.github.io/static/js/main.02f11bf5.js",
     "static/js/453.2384873e.chunk.js": "/thedataversegrimoire.github.io/static/js/453.2384873e.chunk.js",
     "static/media/Candle.png": "/thedataversegrimoire.github.io/static/media/Candle.330dfec41ee35db18abd.png",
@@ -10,12 +10,12 @@
     "static/media/Background.png": "/thedataversegrimoire.github.io/static/media/Background.758a915a37df6d67eef5.png",
     "static/media/skeleton-cursor.png": "/thedataversegrimoire.github.io/static/media/skeleton-cursor.b385daf1a6a695d646a7.png",
     "index.html": "/thedataversegrimoire.github.io/index.html",
-    "main.fecaabc4.css.map": "/thedataversegrimoire.github.io/static/css/main.fecaabc4.css.map",
+    "main.de1f0b1f.css.map": "/thedataversegrimoire.github.io/static/css/main.de1f0b1f.css.map",
     "main.02f11bf5.js.map": "/thedataversegrimoire.github.io/static/js/main.02f11bf5.js.map",
     "453.2384873e.chunk.js.map": "/thedataversegrimoire.github.io/static/js/453.2384873e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fecaabc4.css",
+    "static/css/main.de1f0b1f.css",
     "static/js/main.02f11bf5.js"
   ]
 }
