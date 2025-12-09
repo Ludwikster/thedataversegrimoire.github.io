@@ -8,5 +8,7 @@ tags:
   - D365
 ---
 
-Welcome, traveler. 🕯️  
-Today we conjure our first entity from the **Dataverse** — a table so powerful, even legacy data trembles before it...
+After downloading **PAC CLI** open windows terminal go to proper destination and write down below comand: 
+```powershell
+pac plugin init
+
