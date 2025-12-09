@@ -4,8 +4,6 @@ title: "🕯️Welcome, traveler.🕯️"
 date: 2025-10-05
 tags:
   - intro
-  - Dataverse
-  - PowerPlatform
 ---
 
 Greetings, seeker of knowledge. 🕯️
