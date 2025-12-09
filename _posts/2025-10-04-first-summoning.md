@@ -10,22 +10,29 @@ tags:
 ---
 
 After downloading **PAC CLI** open windows terminal go to proper destination and write down below comand: 
+
 ```powershell
 pac plugin init -o {NAME-OF-YOUR-SLN}
 ```
 Result :
+
 ![First Plugin](/images/FirstPlugin.png)
+
 This comand will create a an solution that will contain choosen name.
 Adventage of that aprouch is : Your plugins will be created as a nuget packegs which will contain external dlls like Newtonsof-Json.
 
 Beginings: 
 ```csharp 
-Plugin1.cs ``` is Your plugin class in which You will provide necessary changes and logick.
+Plugin1.cs 
+``` 
+Above Tou will be ableto see Your plugin class in which You will provide necessary changes and logick.
 
 I prefere to seperate methods into repositories or as so called domains once place to rule them all ( in the matter of functionality ;) ).
 Lets add Dataverse repository which will get all Contacts from our system: 
 Create a new class called DataverseRepository.
+
 ![Dataverse Repository](/images/DataVerseRepository.png)
+
 ```csharp
 using System.Collections.Generic;
 using System.Linq;
