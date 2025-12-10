@@ -6,7 +6,7 @@ tags:
   - PowerPlatform
   - Dataverse
   - D365
-  - Plugin
+  - BackEnd
 ---
 
 After downloading **PAC CLI**, open Windows Terminal, navigate to the proper destination, and run the following command:
