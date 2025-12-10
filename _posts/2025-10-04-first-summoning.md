@@ -9,29 +9,24 @@ tags:
   - Plugin
 ---
 
-After downloading **PAC CLI** open windows terminal go to proper destination and write down below comand: 
+After downloading **PAC CLI**, open Windows Terminal, navigate to the proper destination, and run the following command:
 
 ```powershell
 pac plugin init -o {NAME-OF-YOUR-SLN}
 ```
-Result :
+Result:
+![First Plugin](https://api.github.com/repos/Ludwikster/thedataversegrimoire.github.io/contents/images/FirstPlugin.png)
 
-![First Plugin](/images/FirstPlugin.png)
+This command will create a solution that contains the chosen name. The advantage of this approach is that your plugins will be created as NuGet packages, which can include external DLLs such as Newtonsoft.Json.
 
-This comand will create a an solution that will contain choosen name.
-Adventage of that aprouch is : Your plugins will be created as a nuget packegs which will contain external dlls like Newtonsof-Json.
+```csharp
+Plugin1.cs
+```
+Above you can see your plugin class, where you will provide the necessary changes and logic.
 
-Beginings: 
-```csharp 
-Plugin1.cs 
-``` 
-Above Tou will be ableto see Your plugin class in which You will provide necessary changes and logick.
+I prefer to separate methods into repositories or so-called domains—one place to rule them all (in terms of functionality 😉). Let's add a Dataverse repository that retrieves all Contacts from our system. Create a new class called DataverseRepository.
 
-I prefere to seperate methods into repositories or as so called domains once place to rule them all ( in the matter of functionality ;) ).
-Lets add Dataverse repository which will get all Contacts from our system: 
-Create a new class called DataverseRepository.
-
-![Dataverse Repository](/images/DataVerseRepository.png)
+![DataverseRepository](https://api.github.com/repos/Ludwikster/thedataversegrimoire.github.io/contents/images/DataVerseRepository.png)
 
 ```csharp
 using System.Collections.Generic;
@@ -52,13 +47,14 @@ public class DataverseRepository
     {
         var query = new QueryExpression();
         query.EntityName = "contact";
-        query.ColumnSet = new ColumnSet(true); //PLEASE DON'T ;) Always Query what You requeire. Nothing more nothing less... 
+        query.ColumnSet = new ColumnSet(true); // PLEASE DON'T ;) Always query only what you require. Nothing more, nothing less.
         return this._orgService.RetrieveMultiple(query).Entities.ToList();
     }
 }
 ```
 
-After that You are able to use Dataverse repository in Your plugin : 
+After that you are able to use the Dataverse repository in your plugin:
+
 ```csharp
 using System;
 
@@ -69,7 +65,6 @@ namespace FirstPlugin
         public FirstPlugin(string unsecureConfiguration, string secureConfiguration)
             : base(typeof(FirstPlugin))
         {
-      
         }
 
         protected override void ExecuteDataversePlugin(ILocalPluginContext localPluginContext)
@@ -80,11 +75,11 @@ namespace FirstPlugin
             }
 
             var context = localPluginContext.PluginExecutionContext;
-            // Elevated organisation service allows us to use plugin in context of System. Powerfull tool. Treat it with care.
-            var elevatedOrganisationService = localPluginContext.OrgSvcFactory.CreateOrganizationService(null); 
-            var dataverseService = new DataverseRepository(elevatedOrganisationService);
+            // Elevated organization service allows us to use the plugin in the context of System. Powerful tool—treat it with care.
+            var elevatedOrganizationService = localPluginContext.OrgSvcFactory.CreateOrganizationService(null);
+            var dataverseService = new DataverseRepository(elevatedOrganizationService);
             var contacts = dataverseService.GetAllContacts();
-            //After retrieving contacts You can extend logick as You please or better...as requierments says.
+            // After retrieving contacts, you can extend logic as you please—or better yet, as requirements dictate.
         }
     }
 }
