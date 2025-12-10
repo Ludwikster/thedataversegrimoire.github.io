@@ -15,18 +15,18 @@ After downloading **PAC CLI**, open Windows Terminal, navigate to the proper des
 pac plugin init -o {NAME-OF-YOUR-SLN}
 ```
 Result:
-![First Plugin](https://api.github.com/repos/Ludwikster/thedataversegrimoire.github.io/contents/images/FirstPlugin.png)
+![First Plugin](https://raw.githubusercontent.com/Ludwikster/thedataversegrimoire.github.io/main/images/FirstPlugin.png)
 
 This command will create a solution that contains the chosen name. The advantage of this approach is that your plugins will be created as NuGet packages, which can include external DLLs such as Newtonsoft.Json.
 
 ```csharp
 Plugin1.cs
 ```
-Above you can see your plugin class, where you will provide the necessary changes and logic.
+Above you can see your plugin class, where you will provide the necessary changes and logic. I'll rename Plugin1.cs to FirstPlugin.cs.
 
 I prefer to separate methods into repositories or so-called domains—one place to rule them all (in terms of functionality 😉). Let's add a Dataverse repository that retrieves all Contacts from our system. Create a new class called DataverseRepository.
 
-![DataverseRepository](https://api.github.com/repos/Ludwikster/thedataversegrimoire.github.io/contents/images/DataVerseRepository.png)
+![DataverseRepository](https://raw.githubusercontent.com/Ludwikster/thedataversegrimoire.github.io/main/images/DataVerseRepository.png)
 
 ```csharp
 using System.Collections.Generic;
