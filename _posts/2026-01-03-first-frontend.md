@@ -1,11 +1,12 @@
 --- 
 layout: post 
-title: "🕯️First Script Magic🕯️" 
+title: "First Script Magic" 
 date: 2026-01-03 
 tags: 
-- Dataverse 
-- PowerPlatform 
-- FrontEnd 
+  - PowerPlatform
+  - Dataverse
+  - D365
+  - FrontEnd
 ---
 Using JavaScript in CRM was allowed since the old age of on‑premise environments. By reading the text below you will be able to learn how to begin your journey with JS in PowerPlatform. Create yourself a folder and JavaScript file to store and structure your code:
 
