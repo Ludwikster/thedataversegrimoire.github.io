@@ -22,6 +22,7 @@ This command will create a solution that contains the chosen name. The advantage
 ```csharp
 Plugin1.cs
 ```
+
 Above you can see your plugin class, where you will provide the necessary changes and logic. I'll rename Plugin1.cs to FirstPlugin.cs.
 
 I prefer to separate methods into repositories or so-called domains—one place to rule them all (in terms of functionality 😉). Let's add a Dataverse repository that retrieves all Contacts from our system. Create a new class called DataverseRepository.

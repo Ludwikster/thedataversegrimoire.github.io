@@ -1,4 +1,4 @@
---- 
+---
 layout: post 
 title: "🕯️First Script Magic🕯️" 
 date: 2026-01-03 
