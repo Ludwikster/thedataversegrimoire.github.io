@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "First Script Magic" 
+title: "🕯️First Script Magic🕯️" 
 date: 2026-01-03 
 tags: 
   - PowerPlatform
@@ -8,6 +8,7 @@ tags:
   - D365
   - FrontEnd
 ---
+
 Using JavaScript in CRM was allowed since the old age of on‑premise environments. By reading the text below you will be able to learn how to begin your journey with JS in PowerPlatform. Create yourself a folder and JavaScript file to store and structure your code:
 
 ![FirstScriptPath](https://raw.githubusercontent.com/Ludwikster/thedataversegrimoire.github.io/main/images/FirstScriptPath.png)
@@ -18,7 +19,7 @@ Create a web resource in the environment:
 
 Fill out the necessary information and press save. Then you can go back to your JS file and start with simple code such as:
 
-```js 
+```js
 var AccountMainLib = AccountMainLib || {}; 
 (function (AccountMainLibNS) { 
     AccountMainLibNS.checkPhoneNumber = function (executionContext) { 
