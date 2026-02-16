@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The First Summoning"
+title: "The First Plugin Summoning"
 date: 2025-10-04
 tags:
   - PowerPlatform
