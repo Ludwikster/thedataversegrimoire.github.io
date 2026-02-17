@@ -111,13 +111,14 @@ Your transpiled JS will be visible in disti folder!
 ![TSStructureNoDataverseIfy](https://raw.githubusercontent.com/Ludwikster/thedataversegrimoire.github.io/main/images/TSStructureNoDataverseIfy.png)
 
 You can just copy paste it to your webresource and We are all done!
-***Dataverse-ify***
+
+**Dataverse-ify**
 But...TypeScript as name suggests is strongly typed whom would have thought?😉
 Below You can follow up link to package created by Scott Durow that will provide you attributes, table metadata and many many more! (🎆Pure awesomnes🎆)
 
 <https://github.com/scottdurow/dataverse-ify>
 
-***TESTS***
+**TESTS**
 TS project can also provide us unit tests!
 Instal jest package :
 
