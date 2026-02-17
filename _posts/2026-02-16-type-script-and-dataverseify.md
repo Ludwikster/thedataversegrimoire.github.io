@@ -96,6 +96,7 @@ class AccountMainLib {
         return /^\+?[1-9]\d{1,3}/.test(number);
     }
 }
+export default AccountMainLib;
 ```
 
 Run :
